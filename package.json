@@ -1,0 +1,36 @@
+{
+  "name": "passport-uber-v2",
+  "version": "0.1.0",
+  "description": "Uber authentication strategy for Passport",
+  "keywords": [
+    "passport",
+    "uber",
+    "auth",
+    "oauth",
+    "oauth2"
+  ],
+  "author": {
+    "name": "Tomomi ❤ Imura",
+    "email": "tomomi.i@gmail.com",
+    "url": "http://girliemac.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/girliemac/passport-uber-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/girliemac/passport-uber-v2/issues"
+  },
+  "license": "MIT",
+  "main": "./lib",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "passport-oauth2": "1.x.x"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
