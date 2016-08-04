@@ -22,8 +22,7 @@ var uberStrategy = require('passport-uber-v2').Strategy;
 passport.use(new uberStrategy({
     clientID: CLIENT_ID,
     clientSecret: CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/callback',
-    state: true
+    callbackURL: 'http://localhost:3000/callback'
   },
   function(accessToken, refreshToken, profile, done) {
     var user = profile;
@@ -43,7 +42,7 @@ For example, as route middleware in an [Express](http://expressjs.com/) applic
 
 ```javascript
 app.get('/auth/uber',
-  passport.authenticate('uber', { scope: ['public','profile'] }
+  passport.authenticate('uber', { scope: ['profile'] }
 ));
 
 app.get('/callback', passport.authenticate('uber', { failureRedirect: '/login' }),
